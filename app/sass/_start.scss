@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.body {
+    font-family: "Montserrat", "Arial", sans-serif;
+    max-width: none;
+    min-width: none;
+}
+
+.container {
+    max-width: 1200px;
+    min-width: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.visually-hidden {
+    display: none;
+}

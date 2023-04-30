@@ -1,0 +1,29 @@
+.lang {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    margin-right: 6px;
+}
+
+.lang a {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #b3b3ba;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 5px 7px;
+    border-radius: 8px;
+    display: block;
+}
+
+.lang a.active {
+    color: white;
+    background-color: #f0145a;
+}
+
+.lang a:not(.active):hover {
+    background-color: #f5f5fa;
+}

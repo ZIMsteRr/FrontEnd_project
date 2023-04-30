@@ -5,19 +5,14 @@
 
 .body {
     font-family: "Montserrat", "Arial", sans-serif;
-    max-width: none;
-    min-width: none;
+    min-width: 375px;
 }
 
 .container {
-    max-width: 1200px;
-    min-width: none;
+    max-width: 1440px;
+    min-width: 375px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
-a {
-    text-decoration: none;
-}
 
-.visually-hidden {
-    display: none;
-}

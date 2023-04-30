@@ -1,0 +1,49 @@
+.menu {
+    &__list {
+        display: none;
+    }
+
+    &__btn {
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+        background-color: transparent;
+        border: none;
+        padding-top: 15px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (min-width: 768px) {
+    .menu {
+        &__btn {
+            display: none;
+        }
+        &__list {
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+        }
+        &__list li {
+            padding-right: 15px;
+        }
+        &__list a {
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: right;
+            color: #24a3ff;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .menu {
+       justify-self: end;
+       &__list li {
+        padding-right: 0;
+        padding-left: 15px;
+    }
+    }
+}

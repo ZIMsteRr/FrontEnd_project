@@ -5,14 +5,59 @@
 
 .body {
     font-family: "Montserrat", "Arial", sans-serif;
-    min-width: 375px;
 }
 
 .container {
     max-width: 1440px;
-    min-width: 375px;
     padding: 0 15px;
     margin: 0 auto;
 }
 
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
 
+.slick-dots {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    padding: 30px 0;
+}
+
+
+.slick-dots button {
+    border: none;
+    background-color: #24A3FF;
+    font-size: 0;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    margin: 0 0.5rem;
+    opacity: 0.2;
+}
+
+.slick-dots button:hover {
+    cursor: pointer;
+    background-color: #24a3ff;
+}
+
+.slick-dots .slick-active button {
+    opacity: 1;
+}
+
+.responsive {
+    padding-top: 30px;
+}
+
+.responsive img {
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+@media (min-width: 768px) {
+    .container {
+        padding: 0 60px;
+        margin: 0;
+    }
+}

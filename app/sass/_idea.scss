@@ -1,0 +1,96 @@
+.idea {
+    padding: 0 15px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    &__data {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    &__title {
+        padding: 0 -15px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    &__text {
+        margin-top: 28px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 30px;
+        color: #000000;
+    }
+    &__feats {
+        margin-top: -10px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        padding-left: 30px;
+        margin-top: 30px;
+        position: relative;
+    }
+    &__list::before {
+        content: '';
+        border-left: 4px solid #e6e6f0 ;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+    }
+    &__list * &__item :not(:last-child) {
+        padding-bottom: 40px;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    &__item img {
+        margin-right: 10px;
+    }
+    &__item p:first-of-type {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+    &__item p:last-of-type {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #323264;
+        padding-top: 10px;
+    }
+    &_pad {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
+
+@media (min-width: 768px) {
+    .idea {
+        padding: 0;
+    }
+}
+
+@media (min-width: 992px) {
+    .idea {
+        display: flex;
+        padding: 0;
+        &__data {
+            max-width: 60%;
+            padding-right: 30px;
+        }
+    }
+
+}

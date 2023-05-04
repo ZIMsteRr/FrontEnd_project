@@ -6,9 +6,10 @@
         grid-column: span 2;
         display: flex;
         justify-content: space-between ;
-        padding-top: 10px;
         padding-bottom: 10px;
         background-color: #f5f5fa;
+        margin: 0 -15px;
+        padding: 10px 15px;
     }
     &__phone {
         font-weight: 700;
@@ -110,6 +111,9 @@
         }
         &__fb {
             display: block;
+        }
+        &__fb svg:hover path {
+            fill: #f0145a;
         }
         &__fb path {
             fill: #b3b3ba;

@@ -9,8 +9,12 @@
         height: 32px;
         background-color: transparent;
         border: none;
-        padding-top: 15px;
-        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-bottom: 15px;
+    }
+    &__btn svg:hover {
+        background-color: #e6e6f0;
+        border-radius: 8px;
     }
 }
 
@@ -34,6 +38,10 @@
             line-height: 20px;
             text-align: right;
             color: #24a3ff;
+        }
+        &__list a:hover {
+            text-decoration: underline;
+            color: #f0145a;
         }
     }
 }

@@ -1,0 +1,123 @@
+.footer {
+    background-color: #f5f5fa;
+    padding: 0 30px 30px;
+    &__adress {
+        text-align: center;
+        border-top: 2px solid #e6e6f0;
+        padding-top: 30px;
+    }
+    &__adress p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #323264;
+        padding-bottom: 10px;
+    }
+    &__adress a {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #24a3ff;
+        text-decoration: none;
+    }
+    &__adress a:hover {
+        color: #f0145a;
+    }
+    &__contacts {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 21px;
+    }
+    &__contacts-tel {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #46466e;
+        text-decoration: none;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    &__contacts-mail {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #24a3ff;
+        text-decoration: none;
+    }
+    &__contacts-mail:hover {
+        color: #f0145a;
+    }
+    &__contacts svg path {
+        fill: #24a3ff;
+    }
+    &__contacts svg:hover path {
+        fill: #F0145A;
+    }
+    &__legal {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #b3b3ba;
+        padding-top: 30px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        &__adress {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        &__adress p {
+            padding-bottom: 0;
+        }
+        &__adress p::after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #b3b3ba;
+            margin: 0 10px;
+        }
+        &__contacts {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        &__contacts-tel::before {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #b3b3ba;
+            margin: 0 10px;
+        }
+        &__contacts-tel::after {
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background-color: #b3b3ba;
+            margin: 0 10px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .footer__content {
+        display: flex;
+        justify-content: space-between;
+        border-top: 2px solid #e6e6f0;
+    }
+
+    .footer__adress {
+        justify-content: flex-start;
+        border-top: none;
+    }
+}
+
